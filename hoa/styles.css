@@ -5,6 +5,7 @@ a {
 	font-weight: 600;
 	font-size: 64pt;
 	z-index: 8;
+    padding-left: 1%;
 	color: rgb(255, 255, 255);
 }
 
@@ -18,11 +19,16 @@ body {
 	color: #FFF;
 }
 
+img {
+	padding-top: 0.1%;
+	padding-left: 1%;
+}
+
 pre {
 	font-size: 2pt;
 	font-family: "Courier New", Courier, Monaco;
 	padding-top: 0.1%;
-	padding-left: 0.5%;
+	padding-left: 1%;
 	text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
@@ -31,15 +37,15 @@ b {
 	font-size: 30pt;
 	font-family: "Courier New", Courier, Monaco;
 	padding-top: 1.5%;
-	padding-left: 0.5%;
+	padding-left: 1%;
 	text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
 p {
 	font-size: 12pt;
 	font-family: "Courier New", Courier, Monaco;
+    font-weight: 600;
 	padding-top: 0.1%;
-	padding-left: 0.5%;
+	padding-left: 1%;
 	text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
-
