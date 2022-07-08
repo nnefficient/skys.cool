@@ -3,7 +3,7 @@ a {
 	font-family: "Courier New", Courier, Monaco;
 	font-style: normal;
 	font-weight: 600;
-	font-size: 64pt;
+	font-size: clamp(6rem, 1vw + 1rem, 8rem);
 	z-index: 8;
 	color: rgb(255, 255, 255);
 }
@@ -15,8 +15,13 @@ a:hover {
 
 body {
 	background-color: #0a0a0a;;
-	color: #FFF;
+	color: rgb(231, 202, 202);
 }
+
+img {
+	width: clamp(1000px, 100%, 1000px);
+}
+
 
 pre {
 	font-size: 4pt;
@@ -28,10 +33,9 @@ pre {
 
 
 b {
-	font-size: 30pt;
+	font-size: clamp(2.52rem, 1vw + 1rem, 6rem);
 	font-family: "Courier New", Courier, Monaco;
 	padding-top: 1.5%;
+	padding-left: 0.5%;
 	text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
-
-
