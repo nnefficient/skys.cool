@@ -2,9 +2,9 @@ a {
 	text-decoration: none;
 	font-family: "Courier New", Courier, Monaco;
 	font-style: normal;
-	font-weight: 600;
+	font-weight: 500;
 	font-size: 64pt;
-	z-index: 8;
+	z-index: 9;
 	color: rgb(255, 255, 255);
 }
 
