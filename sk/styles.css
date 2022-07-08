@@ -1,0 +1,6 @@
+b {
+	font-size: clamp(2rem, 1vw, 6rem);
+	font-family: "Courier New", Courier, Monaco;
+	padding-top: 0.2%;
+	text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
