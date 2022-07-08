@@ -4,7 +4,6 @@ a {
 	font-style: normal;
 	font-weight: 600;
 	font-size: clamp(5.5rem, 1vw + 1rem, 8rem);
-	padding-left: 0.5%;
 	z-index: 8;
 	color: rgb(255, 255, 255);
 }
@@ -29,7 +28,6 @@ pre {
 	font-size: 4pt;
 	font-family: "Courier New", Courier, Monaco;
 	padding-top: 0.1%;
-	padding-left: 0.5%;
 	text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
@@ -38,6 +36,5 @@ b {
 	font-size: clamp(2.52rem, 1vw + 1rem, 6rem);
 	font-family: "Courier New", Courier, Monaco;
 	padding-top: 0.2%;
-	padding-left: 0.5%;
 	text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
