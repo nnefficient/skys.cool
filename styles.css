@@ -18,10 +18,11 @@ body {
 	color: rgb(231, 202, 202);
 }
 
+/**
 img {
 	width: clamp(1000px, 100%, 1000px);
 }
-
+**/
 
 pre {
 	font-size: 4pt;
