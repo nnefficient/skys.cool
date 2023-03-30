@@ -1,9 +1,9 @@
-var redirect_uri = "https://skys.cool/spotify"; // change this your value
-//var redirect_uri = "http://localhost:8888/callback";
+var redirect_uri = "https://skys.cool/spotify"; 
+
  
 
 var client_id = ""; 
-var client_secret = ""; // In a real app you should not expose your client_secret to the user
+var client_secret = ""; 
 
 var access_token = null;
 var refresh_token = null;
@@ -32,11 +32,9 @@ function onPageLoad(){
     else{
         access_token = localStorage.getItem("access_token");
         if ( access_token == null ){
-            // we don't have an access token so present token section
             document.getElementById("tokenSection").style.display = 'block';  
         }
         else {
-            // we have an access token so present device section
             document.getElementById("deviceSection").style.display = 'block';  
             refreshDevices();
             refreshPlaylists();
@@ -49,7 +47,7 @@ function onPageLoad(){
 function handleRedirect(){
     let code = getCode();
     fetchAccessToken( code );
-    window.history.pushState("", "", redirect_uri); // remove param from url
+    window.history.pushState("", "", redirect_uri); 
 }
 
 function getCode(){
@@ -66,7 +64,7 @@ function requestAuthorization(){
     client_id = document.getElementById("clientId").value;
     client_secret = document.getElementById("clientSecret").value;
     localStorage.setItem("client_id", client_id);
-    localStorage.setItem("client_secret", client_secret); // In a real app you should not expose your client_secret to the user
+    localStorage.setItem("client_secret", client_secret);
 
     let url = AUTHORIZE;
     url += "?client_id=" + client_id;
@@ -74,7 +72,7 @@ function requestAuthorization(){
     url += "&redirect_uri=" + encodeURI(redirect_uri);
     url += "&show_dialog=true";
     url += "&scope=user-read-private user-read-email user-modify-playback-state user-read-playback-position user-library-read streaming user-read-playback-state user-read-recently-played playlist-read-private";
-    window.location.href = url; // Show Spotify's authorization screen
+    window.location.href = url; 
 }
 
 function fetchAccessToken( code ){
